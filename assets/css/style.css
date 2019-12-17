@@ -1,0 +1,37 @@
+
+
+header {
+    background-color: aliceblue;
+}
+
+.my-name {
+    background-color: rgb(87, 152, 168);
+    width: 180px;
+    height: 90px;
+    float: left;   
+    position: relative;
+}
+
+div a{
+    text-decoration: none;
+    float: right;
+    padding: 0 5px;
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: left;
+}
+
+#middle-link {
+    border-style: solid;
+    border-width: 0 1px;
+    border-color: rgb(129, 153, 129);  
+}
+
+img {
+    float: left;
+    width: 25%;
+    height: auto;
+}
