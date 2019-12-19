@@ -1,37 +1,96 @@
-
-
+body {
+    background-image: url("../images/dark_theme_background.jpg");
+    background-color: rgb(42, 38, 87);
+}
+/* Header box */
 header {
-    background-color: aliceblue;
+    background-color: rgb(39, 39, 39);
+    align-content: inline;
+    width: 100%;
+    height: 50px;
+    align-content: center;
 }
-
+/* class my name with relative position on header box and left float */
 .my-name {
-    background-color: rgb(87, 152, 168);
-    width: 180px;
-    height: 90px;
-    float: left;   
+    background-color: rgb(89, 170, 136);
+    float: left; 
     position: relative;
+    top: 0px;
+    left:40px;
+}
+/* my name on the header */
+#header-text{
+    min-height: 4em;
+    display: table-cell;
+    /* this syntax is setting my text in the center of the h2 box */
+    vertical-align: middle;
+    font-size: larger;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
 }
 
-div a{
-    text-decoration: none;
+/* parameters set for the a tags in the header */
+.header-links{
+    /* text-decoration: none; */
     float: right;
-    padding: 0 5px;
+    padding:30px 32px;
 }
 
-.clearfix {
-    content: '';
-    display: block;
-    clear: left;
+/* parameters set for the text in the a tags of the header */
+header a {
+    text-decoration: none;
+    color: rgb(252, 62, 62);
 }
 
+/* using an id for setting the borders on the middle a tag */
 #middle-link {
     border-style: solid;
     border-width: 0 1px;
     border-color: rgb(129, 153, 129);  
+    padding: 0 3px;
 }
 
-img {
+/* clearfix hack */
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*              This begins to style the content outside of the header                   */
+
+.content-box {
+    width: 960px;
+    height: 450px;
+    background-color: rgb(39, 39, 39);
+    position: relative;
+    margin: auto;
+    color: rgb(89, 170, 136);
+    
+}
+
+.bio-img {
     float: left;
-    width: 25%;
+    position: absolute;
+    top:20%;
+    left: 1px;
+    width: 200px;
     height: auto;
+}
+
+.bio-text p {
+    align-content: left;
+    /* position: relative;
+    top: 3%;
+    right: 2px; */
+    
+}
+
+
+
+/* footer */
+footer {
+    border-top: 8px solid #4aaaa5;
+    
 }
