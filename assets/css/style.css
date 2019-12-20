@@ -1,40 +1,65 @@
+
+/* background image with a background color incase the image does not render properly */
 body {
     background-image: url("../images/dark_theme_background.jpg");
     background-color: rgb(42, 38, 87);
+    height: 100%;
+    margin: 0;
 }
+
+/* using wrapper (from footer tips) to ensure footer is always at the bottom of the visible page*/
+/* -50px margin-bottom gives a height of 50px for the space of the footer */
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
 /* Header box */
 header {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(0, 0, 0);
     align-content: inline;
     width: 100%;
     height: 50px;
     align-content: center;
 }
-/* class my name with relative position on header box and left float */
-.my-name {
-    background-color: rgb(89, 170, 136);
-    float: left; 
+
+/* making sure the content displayed in the header stays within the 960px 'workspace' using max-width and margin set to auto */
+.header-content {
     position: relative;
-    top: 0px;
-    left:40px;
+    align-content: center   ;
+    background-color: inherit;
+    max-width: 960px;
+    height: 80px;
+    margin: auto;
 }
+
 /* my name on the header */
 #header-text{
     min-height: 4em;
-    display: table-cell;
+    display: table-column;
     /* this syntax is setting my text in the center of the h2 box */
     vertical-align: middle;
     font-size: larger;
     line-height: 1;
     letter-spacing: 3px;
     color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+}
+
+/* class my name with relative position on header box and left float */
+.my-name {
+    background-color: rgb(89, 170, 136);
+    /* float: left;  */
 }
 
 /* parameters set for the a tags in the header */
 .header-links{
     /* text-decoration: none; */
-    float: right;
-    padding:30px 32px;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    padding: 30px 0;
 }
 
 /* parameters set for the text in the a tags of the header */
@@ -59,38 +84,59 @@ header a {
 }
 
 /*              This begins to style the content outside of the header                   */
-
+/* Content all within div container with class 'content-box' */
+/* max-width syntax gives the content responsiveness when changing the width of the screen */
 .content-box {
-    width: 960px;
-    height: 450px;
-    background-color: rgb(39, 39, 39);
+    max-width: 960px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.562);
     position: relative;
     margin: auto;
-    color: rgb(89, 170, 136);
+    color: rgb(255, 255, 255);
+    font-family: 'Mansalva', cursive;
+    font-size: auto;
     
 }
+/* Title of each page will render using id 'content-title' */
+#content-title {
+    border-top: 2px solid rgb(89, 170, 136);
+    border-bottom: 2px solid rgb(89, 170, 136);
+    margin: 2px 0;
+    font-weight: bolder;
+    font-family: 'Girassol', cursive;
+    letter-spacing: 3px;
+}
 
+/* style for container holding image 'woods_trip.jpg */
 .bio-img {
     float: left;
     position: absolute;
-    top:20%;
+    top:19%;
     left: 1px;
-    width: 200px;
+    width: 30%;
     height: auto;
 }
 
+/* all p elements within the div element containing class 'bio-text' will contain these styles.*/
+/* the margin will allow for the text to appear after the image (no overlap) */
 .bio-text p {
-    align-content: left;
-    /* position: relative;
-    top: 3%;
-    right: 2px; */
+    /* align-content: left; */
+    text-align: left;
+    margin: 0 0 0 33%;
     
 }
-
-
+/* p tags within element containing id '#p-spacing' this will allow for spacing between  */
+#p-spacing p {
+    padding: 0 0 20px 0;
+}
 
 /* footer */
 footer {
     border-top: 8px solid #4aaaa5;
-    
+    background-color: rgb(0,0,0);
+        
+}
+
+.footer, .push {
+  height: 50px;
 }
