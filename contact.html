@@ -9,37 +9,83 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header class="clearfix">
-
-        <div class="header-content">
-
-            <div class="my-name" id="header-text">
-                <h2>Contact</h2>
+    <div class="wrapper">
+        <header class="clearfix">
+    
+            <div class="header-content">
+    
+                <div class="my-name" id="header-text">
+                    <h2>Adrian Romero</h2>
+                </div>
+    
+                <div class="header-links">
+                    <a href="./index.html">About</a>
+                    <a id="middle-link" href="./portfolio.html">Portfolio</a>
+                    <a href="./contact.html">Contact</a> 
+                </div>
+    
             </div>
-
-            <div class="header-links">
-                <a href="./index.html">About</a>
-                <a id="middle-link" href="./portfolio.html">Portfolio</a>
-                <a href="./contact.html">Contact</a> 
-            </div>
-
-        </div>
-
-    </header>
-
-    <br>
-    <div class="content-box">
+    
+        </header>
+        <div class="content-box">
             <div id="content-title">
                 <h2>Contact</h2>
             </div>
-            <div class="bio-text">
     
-                <div>
-                    
-                </div>
+            <br>
+    
+            <div class="bio-text">
+                
+                <form class="personal-info">                    
+                    <ul>
+
+                        <li>
+                            <p>
+                                <label for="first_name">first name</label>
+                                <input type="text" name="first_name" placeholder="John">
+                            </p>
+                            <br>
+                        
+                            <p>
+                                <label for="last_name">last name</label>
+                                <input type="text" name="last_name" placeholder="Doe">
+                            </p>
+                            <br>
+                        
+                            <p>
+                                <label for="email">e-mail<span class="req">*</span></label>
+                                <input type="text" name="email" placeholder="John.Doe@gmail.com">
+                            </p>
+                        </li>
+        
+                        <li>
+                           <div class="divider"></div>
+                        </li>
+                        <li>
+                            <label for="comments">Comments</label>
+                            <textarea cols="46" rows="3" name="comments" placeholder="Type your comments here"></textarea>
+                        </li>
+                        <br>
+                        <li>
+                            <input class="btn submit-btn" type="submit" value="Submit" />
+                        </li>
+                        
+                            
+                    </div>
+
+                    </ul>
+                </form>
             </div>
-            
+                
         </div>
-        <footer>
             
-        </footer>
+        <div class="push"></div>
+    </div>
+
+    <br>
+    <footer class="footer">  
+        <div>
+            <h4><strong>Adrian Romero 2019 Portfolio</strong></h4>
+            <a href="https://www.linkedin.com/in/adrian-romero-b185b598/">linkedin</a>
+        </div>  
+    </footer>
